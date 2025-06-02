@@ -1,38 +1,148 @@
-.App {
+p {
+  font-size: 12px;
+}
+
+/* todo form */
+
+.todo-form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.todo-form h2 {
   text-align: center;
+  margin-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form-group {
+  margin-bottom: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-group input {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.button-group {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.button-save {
+  background-color: #4caf50;
   color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.button-cancel {
+  background-color: #ccc;
+  color: black;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+/* todo listing */
+
+.close {background-color: #dc3545 }
+.open {background-color: #007bff }
+
+.todo-wrapper {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.add-btn {
+  padding: 8px 16px;
+  margin-bottom: 20px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.board-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding-bottom: 10px;
+}
+
+.status-column {
+  flex: 0 0 370px;
+  padding: 10px;
+  min-height: 300px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  border: 2px dashed #ccc;
+}
+
+.status-column h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.todo-card {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: move;
+}
+
+.todo-card h5 {
+  margin: 0 0 5px;
+}
+
+.todo-card p {
+  margin: 0 0 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.edit-btn {
+  margin-right: 5px;
+  background-color: #ffc107;
+  color: black;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Responsive tweak */
+@media (max-width: 768px) {
+  .status-column {
+    flex: 0 0 85%;
   }
 }
