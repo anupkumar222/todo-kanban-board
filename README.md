@@ -23,4 +23,13 @@ This is a lightweight Kanban-style Todo app built using React with features like
 ## API Integration:
 On component mount, todos are fetched from an API (ENDPOINTS.TODOSLIST), then mapped to add a human-readable status.
 
+## Setup Instructions
+Clone the repo:
+
+git clone https://github.com/anupkumar222/todo-kanban-board.git
+cd todo-kanban
+
+npm install
+npm start
+
 ---
